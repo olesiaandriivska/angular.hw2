@@ -1,0 +1,16 @@
+<div>
+  <p>id: {{user.id}}<br>
+  name: {{user.name}}<br>
+  username: {{user.username}}</p>
+  <p>city:{{user.address.city}} <br>
+    street:{{user.address.street}}<br>
+    suite:{{user.address.suite}}<br>
+    zipcode:{{user.address.zipcode}}<br>
+    geo:{{user.address.geo.lat}}<br>
+    {{user.address.geo.lng}}</p>
+  <p>email: {{user.email}}<br>
+  phone: {{user.email}}<br>
+  website: {{user.email}}</p>
+  <button (click)="allPostsToLog(user.id)">show post</button>
+  <button (click)="allCommentsToLog(user.id)">show comment</button>
+</div>
